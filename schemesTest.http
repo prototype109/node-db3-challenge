@@ -27,3 +27,12 @@ Content-Type: application/json
 
 ### DELETE REQUEST
 DELETE {{url}}/6
+
+### ADD STEP TO SCHEME
+POST {{url}}/1/steps
+Content-Type: application/json
+
+{
+    "step_number" : 3,
+    "instructions" : "add a new step"
+}
