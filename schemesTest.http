@@ -1,0 +1,7 @@
+@url=http://localhost:5000/api/schemes
+
+### GET REQUEST
+GET {{url}}/
+
+### GET REQUEST ID
+GET {{url}}/1
