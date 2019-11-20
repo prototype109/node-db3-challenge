@@ -1,0 +1,38 @@
+@url=http://localhost:5000/api/schemes
+
+### GET REQUEST
+GET {{url}}/
+
+### GET REQUEST ID
+GET {{url}}/1
+
+### GET STEPS BY ID
+GET {{url}}/1/steps
+
+### POST SCHEME TO SCHEME TABLE
+POST {{url}}/
+Content-Type: application/json
+
+{
+    "scheme_name" : "My New Scheme"
+}
+
+### PUT REQUEST
+PUT {{url}}/6
+Content-Type: application/json
+
+{
+    "scheme_name" : "updated scheme name"
+}
+
+### DELETE REQUEST
+DELETE {{url}}/6
+
+### ADD STEP TO SCHEME
+POST {{url}}/1/steps
+Content-Type: application/json
+
+{
+    "step_number" : 3,
+    "instructions" : "add a new step"
+}
